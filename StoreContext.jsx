@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { food_list, restaurants } from "../assets/assets";
+import {restaurants } from "../assets/assets";
 
 export const StoreContext = createContext(null);
 
@@ -63,7 +63,6 @@ const StoreContextProvider = (props) => {
     addToCart,
     removeFromCart,
     restaurants,   // ✅ keep restaurant list
-    food_list,     // optional flat list
     getTotalCartAmount,
     searchQuery,
     setSearchQuery,
