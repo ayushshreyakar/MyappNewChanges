@@ -1,0 +1,102 @@
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 165, 0, 0.15); /* light orange overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.login-form {
+  background: #fff8f0;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(255, 140, 0, 0.3);
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.login-title {
+  color: #ff7f32;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  padding: 0.7rem;
+  border: 1px solid #ffcc99;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #ff7f32;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff944d;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #ff7f32;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.switch-state {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.switch-state span {
+  color: #ff7f32;
+  font-weight: bold;
+  cursor: pointer;
+}
