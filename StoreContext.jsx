@@ -4,6 +4,10 @@ import { food_list, restaurants } from "../assets/assets";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
+
+  const url = "http://localhost:4000"
+  const[token,setToken] = useState("")
+
   // ✅ Load cart from localStorage initially
   const [cartItems, setCartItems] = useState(() => {
     const saved = localStorage.getItem("cartItems");
@@ -48,6 +52,12 @@ const StoreContextProvider = (props) => {
     return totalAmount;
   };
 
+  useEffect(()=>{
+    if (localStorage.getItem("token")){
+        setToken(localStorage.getItem("token"));
+    }
+  },[])
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -57,6 +67,9 @@ const StoreContextProvider = (props) => {
     getTotalCartAmount,
     searchQuery,
     setSearchQuery,
+    url,
+    token,
+    setToken
   };
 
   return (
