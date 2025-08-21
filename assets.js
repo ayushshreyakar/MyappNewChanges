@@ -77,195 +77,197 @@ export const menu_list = [
     }
 ]
 
-export const food_list = [
-    {
-        _id: "1",
-        name: "Biriyani",
-        image: biriyani_img,
-        description: "Fragrant basmati rice cooked with aromatic spices and tender meat or vegetables.",
-        category: "Main Course",
-        price: 220
-    },
-    {
-        _id: "2",
-        name: "Paneer Butter Masala",
-        image: paneer_butter_masala_img,
-        description: "Soft paneer cubes in a rich, buttery tomato gravy.",
-        category: "Main Course",
-        price: 200
-    },
-    {
-        _id: "3",
-        name: "Masala Dosa",
-        image: masala_dosa_img,
-        description: "Crispy rice crepe filled with spiced mashed potatoes, served with chutney and sambar.",
-        category: "Main Course",
-        price: 80
-    },
-    {
-        _id: "4",
-        name: "Paneer Tikka",
-        image: paneer_tikka_img,
-        description: "Juicy, marinated paneer pieces grilled to perfection with Indian spices.",
-        category: "Starters",
-        price: 180
-    },
-    {
-        _id: "5",
-        name: "Veg Spring Rolls",
-        image: veg_spring_roll_img,
-        description: "Crispy rolls filled with sautéed vegetables and served with sweet chilli sauce.",
-        category: "Starters",
-        price: 160
-    },
-    {
-        _id: "6",
-        name: "Hara Bhara Kabab",
-        image: hara_bhara_kabab_img,
-        description: "Pan-fried green patties made with spinach, peas, and potatoes.",
-        category: "Starters",
-        price: 160
-    },
-    {
-        _id: "7",
-        name: "Gulab Jamun",
-        image: gulab_jamun_img,
-        description: "Soft, deep-fried dough balls soaked in warm sugar syrup.",
-        category: "Dessert",
-        price: 70
-    },
-    {
-        _id: "8",
-        name: "Rasgulla",
-        image: rasgulla_img,
-        description: "Soft and spongy balls made from chhena and soaked in light sugar syrup.",
-        category: "Dessert",
-        price: 80
-    },
-    {
-        _id: "9",
-        name: "Chocolate Brownie",
-        image: chocolate_brownie_img,
-        description: "Rich, fudgy brownie topped with a drizzle of chocolate sauce.",
-        category: "Dessert",
-        price: 120
-    },
-    {
-        _id: "10",
-        name: "Fruit Salad",
-        image: fruit_salad_img,
-        description: "A refreshing mix of seasonal fruits, lightly sweetened and chilled.",
-        category: "Dessert",
-        price: 120
-    },
-
-    // ------------------ Breakfast ------------------
-    {
-        _id: "11",
-        name: "Idli Sambar",
-        image: idli_sambar_img,
-        description: "Soft steamed rice cakes served with sambar and coconut chutney.",
-        category: "Breakfast",
-        price: 60
-    },
-    {
-        _id: "12",
-        name: "Poha",
-        image: poha_img,
-        description: "Flattened rice cooked with onions, peas, mustard seeds, and garnished with coriander.",
-        category: "Breakfast",
-        price: 50
-    },
-    {
-        _id: "13",
-        name: "Aloo Paratha",
-        image: aloo_paratha_img,
-        description: "Whole wheat flatbread stuffed with spiced mashed potatoes, served with curd and pickle.",
-        category: "Breakfast",
-        price: 90
-    },
-
-    // ------------------ Snacks ------------------
-    {
-        _id: "14",
-        name: "Samosa",
-        image: samosa_img,
-        description: "Deep-fried pastry filled with spicy potato mixture, served with chutney.",
-        category: "Snacks",
-        price: 30
-    },
-    {
-        _id: "15",
-        name: "Pav Bhaji",
-        image: pav_bhaji_img,
-        description: "Buttery bread rolls served with spicy mashed vegetable curry.",
-        category: "Snacks",
-        price: 120
-    },
-    {
-        _id: "16",
-        name: "Bhel Puri",
-        image: bhel_puri_img,
-        description: "Tangy and crunchy mixture of puffed rice, sev, chutneys, and fresh veggies.",
-        category: "Snacks",
-        price: 60
-    },
-
-    // ------------------ Beverages ------------------
-    {
-        _id: "17",
-        name: "Masala Chai",
-        image: masala_chai_img,
-        description: "Strong Indian tea brewed with milk, sugar, and aromatic spices.",
-        category: "Beverages",
-        price: 30
-    },
-    {
-        _id: "18",
-        name: "Mango Lassi",
-        image: mango_lassi_img,
-        description: "Refreshing yogurt-based drink blended with ripe mango pulp.",
-        category: "Beverages",
-        price: 80
-    },
-    {
-        _id: "19",
-        name: "Filter Coffee",
-        image: filter_coffee_img,
-        description: "South Indian style strong coffee served with frothy milk.",
-        category: "Beverages",
-        price: 40
-    }
-]
-
 export const restaurants = [
   {
     id: "r1",
     name: "Spicy Indian Tandoor",
-    food_list: food_list.filter((item) =>
-      ["1", "2", "4", "5", "7", "12"].includes(item._id) // biriyani, paneer butter masala, paneer tikka, spring rolls, gulab jamun, poha
-    ),
+    food_list: [
+      {
+        _id: "1",
+        name: "Biriyani",
+        image: biriyani_img,
+        description: "Hyderabadi biriyani with tender chicken and extra spices.",
+        category: "Main Course",
+        price: 250,
+      },
+      {
+        _id: "2",
+        name: "Paneer Butter Masala",
+        image: paneer_butter_masala_img,
+        description: "Paneer cubes in our signature rich buttery tomato gravy.",
+        category: "Main Course",
+        price: 210,
+      },
+      {
+        _id: "4",
+        name: "Paneer Tikka",
+        image: paneer_tikka_img,
+        description: "Char-grilled paneer marinated in a smoky spice blend.",
+        category: "Starters",
+        price: 190,
+      },
+      {
+        _id: "5",
+        name: "Veg Spring Rolls",
+        image: veg_spring_roll_img,
+        description: "Golden fried rolls with mixed vegetables, served with chilli sauce.",
+        category: "Starters",
+        price: 170,
+      },
+      {
+        _id: "7",
+        name: "Gulab Jamun",
+        image: gulab_jamun_img,
+        description: "Warm jamuns dipped in saffron-flavored sugar syrup.",
+        category: "Dessert",
+        price: 90,
+      },
+      {
+        _id: "12",
+        name: "Poha",
+        image: poha_img,
+        description: "Light poha with onions, peanuts, and coriander garnish.",
+        category: "Breakfast",
+        price: 55,
+      },
+    ],
   },
   {
     id: "r2",
     name: "South Delight",
-    food_list: food_list.filter((item) =>
-      ["3", "6", "8", "11", "13", "19"].includes(item._id) // dosa, hara bhara kabab, rasgulla, idli, aloo paratha, filter coffee
-    ),
+    food_list: [
+      {
+        _id: "3",
+        name: "Masala Dosa",
+        image: masala_dosa_img,
+        description: "Crispy dosa with ghee, chutney, and spicy potato masala.",
+        category: "Main Course",
+        price: 100,
+      },
+      {
+        _id: "6",
+        name: "Hara Bhara Kabab",
+        image: hara_bhara_kabab_img,
+        description: "Spinach, peas, and potato patties with mint chutney.",
+        category: "Starters",
+        price: 150,
+      },
+      {
+        _id: "8",
+        name: "Rasgulla",
+        image: rasgulla_img,
+        description: "Soft spongy rasgullas in chilled light syrup.",
+        category: "Dessert",
+        price: 70,
+      },
+      {
+        _id: "11",
+        name: "Idli Sambar",
+        image: idli_sambar_img,
+        description: "Steamed idlis with hot sambar and chutneys.",
+        category: "Breakfast",
+        price: 65,
+      },
+      {
+        _id: "13",
+        name: "Aloo Paratha",
+        image: aloo_paratha_img,
+        description: "Flaky paratha stuffed with spiced potatoes, served with curd.",
+        category: "Breakfast",
+        price: 95,
+      },
+      {
+        _id: "19",
+        name: "Filter Coffee",
+        image: filter_coffee_img,
+        description: "South Indian filter coffee with frothy milk.",
+        category: "Beverages",
+        price: 45,
+      },
+    ],
   },
   {
     id: "r3",
     name: "Street Bites",
-    food_list: food_list.filter((item) =>
-      ["14", "15", "16", "17", "18"].includes(item._id) // samosa, pav bhaji, bhel puri, chai, lassi
-    ),
+    food_list: [
+      {
+        _id: "14",
+        name: "Samosa",
+        image: samosa_img,
+        description: "Crispy fried samosas with tangy chutney.",
+        category: "Snacks",
+        price: 35,
+      },
+      {
+        _id: "15",
+        name: "Pav Bhaji",
+        image: pav_bhaji_img,
+        description: "Buttery pav with spicy vegetable bhaji.",
+        category: "Snacks",
+        price: 130,
+      },
+      {
+        _id: "16",
+        name: "Bhel Puri",
+        image: bhel_puri_img,
+        description: "Crispy bhel puri with tangy chutneys and sev.",
+        category: "Snacks",
+        price: 65,
+      },
+      {
+        _id: "17",
+        name: "Masala Chai",
+        image: masala_chai_img,
+        description: "Strong tea with milk, cardamom, and ginger.",
+        category: "Beverages",
+        price: 25,
+      },
+      {
+        _id: "18",
+        name: "Mango Lassi",
+        image: mango_lassi_img,
+        description: "Thick mango lassi with fresh pulp.",
+        category: "Beverages",
+        price: 85,
+      },
+    ],
   },
   {
     id: "r4",
     name: "Sweet Treats",
-    food_list: food_list.filter((item) =>
-      ["7", "8", "9", "10"].includes(item._id) // gulab jamun, rasgulla, brownie, fruit salad
-    ),
+    food_list: [
+      {
+        _id: "7",
+        name: "Gulab Jamun",
+        image: gulab_jamun_img,
+        description: "Classic gulab jamun served warm.",
+        category: "Dessert",
+        price: 75,
+      },
+      {
+        _id: "8",
+        name: "Rasgulla",
+        image: rasgulla_img,
+        description: "Fresh rasgullas in chilled syrup.",
+        category: "Dessert",
+        price: 85,
+      },
+      {
+        _id: "9",
+        name: "Chocolate Brownie",
+        image: chocolate_brownie_img,
+        description: "Chocolate brownie with ice cream (optional).",
+        category: "Dessert",
+        price: 150,
+      },
+      {
+        _id: "10",
+        name: "Fruit Salad",
+        image: fruit_salad_img,
+        description: "Seasonal fruits tossed in honey.",
+        category: "Dessert",
+        price: 110,
+      },
+    ],
   },
 ];
-
