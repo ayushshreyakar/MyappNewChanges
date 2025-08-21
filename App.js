@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <BrowserRouter>
       <StoreContextProvider>
-        {showLogin?<LoginPopup/>:<></>}
+        {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
         <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path='/' element={<Home/>} />
